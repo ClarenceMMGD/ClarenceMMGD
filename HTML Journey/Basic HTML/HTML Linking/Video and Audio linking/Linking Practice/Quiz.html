@@ -1,0 +1,67 @@
+<html>
+<body bgcolor=lightblue>
+<head><font face="Arial" size=5px><title>Quiz</title></font></head>
+<style>
+body {
+  background-image: url('Picture.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+</style>
+<center><br>
+<font face="Arial" size=6px><P><b>Quiz #1</b></font><center>
+<fieldset style="width:1100px;margin-left:70">
+<br>
+<legend><font face="Arial" size=5px><b>Video</b></font></legend>
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button> 
+<button onclick="stopVid()" type="button">stop Video</button><br><br> 
+
+<video  id="walt" width="1044" height="500" autoplay controls>
+   <source src="video9.mp4" type="video/mp4">
+  </video>
+  </fieldset>
+    <script>  
+  var vid = document.getElementById("walt"); 
+  
+function playVid() { 
+  vid.play(); 
+} 
+function pauseVid() { 
+  vid.pause(); 
+} 
+function stopVid() { 
+  vid.pause(); 
+  vid.currentTime = 0;
+} 
+</script> 
+<br><br>
+<fieldset style="width:1100px;margin-left:70">
+
+<legend><font face="Arial" size=5px><b>Audio</b></font></legend>
+ <button onclick="playAud()" type="button">Play Audio</button>
+<button onclick="pauseAud()" type="button">Pause Audio</button> 
+<button onclick="stopAud()" type="button">stop Audio</button><br><br> 
+ <br>
+  <audio id="mil" autoplay controls>
+    <source src="video10.mp3" type="audio/mp3">
+	</audio>
+    </fieldset>
+
+  <script>  
+  var Aud = document.getElementById("mil"); 
+  
+function playAud() { 
+  Aud.play(); 
+} 
+function pauseAud() { 
+  Aud.pause(); 
+} 
+function stopAud() { 
+  Aud.pause(); 
+  Aud.currentTime = 0;
+} 
+</script> 
+
+</body>
+</html>
